@@ -1,0 +1,839 @@
+{
+  "0_Cuadrilla": {
+    "sentence": "Cuadrilla files to delay application to frack in Lancashire",
+    "info": [
+      {
+        "snippets": "['files to delay application']",
+        "target": "Cuadrilla"
+      }
+    ]
+  },
+  "1001_Sainsbury": {
+    "sentence": "Sainsbury chief warns of squeeze on high street retailers",
+    "info": [
+      {
+        "snippets": "['warns of squeeze on high street retailers']",
+        "target": "Sainsbury"
+      }
+    ]
+  },
+  "1006_Barclays": {
+    "sentence": "Barclays fined for anti-money-laundering failings",
+    "info": [
+      {
+        "snippets": "['fined for anti-money-laundering failings']",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "1007_Barclays": {
+    "sentence": "UPDATE 3-Barclays fined for lax crime checks in 'deal of century'",
+    "info": [
+      {
+        "snippets": "['fined for lax crime checks in']",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "1014_GSK": {
+    "sentence": "GSK aims to file up to 20 new drugs for approval by 2020",
+    "info": [
+      {
+        "snippets": "['file up to 20 new drugs for approval by 2020']",
+        "target": "GSK"
+      }
+    ]
+  },
+  "1031_National Grid": {
+    "sentence": "CompaniesNational Grid lines up sale of gas business",
+    "info": [
+      {
+        "snippets": "['Grid lines up sale of']",
+        "target": "National Grid"
+      }
+    ]
+  },
+  "1034_British American Tobacco": {
+    "sentence": "British American Tobacco accused of bribing senior politicians to sabotage ...",
+    "info": [
+      {
+        "snippets": "['accused of bribing senior politicians to sabotage']",
+        "target": "British American Tobacco"
+      }
+    ]
+  },
+  "1035_MillerCoors": {
+    "sentence": "UPDATE 2-AB InBev launches SAB bid, to sell MillerCoors stake",
+    "info": [
+      {
+        "snippets": "['launches SAB bid, to sell']",
+        "target": "MillerCoors"
+      }
+    ]
+  },
+  "1039_AstraZeneca": {
+    "sentence": "AstraZeneca shares climb 3% as drug maker ups profits forecasts",
+    "info": [
+      {
+        "snippets": "['shares climb 3%']",
+        "target": "AstraZeneca"
+      }
+    ]
+  },
+  "103_Hammerson": {
+    "sentence": "Landlord Hammerson's NAV rises on increased leasing activity",
+    "info": [
+      {
+        "snippets": "['rises on increased leasing activity']",
+        "target": "Hammerson"
+      }
+    ]
+  },
+  "1050_BAE Systems": {
+    "sentence": "BAE Systems cuts earnings target for 2015 and 370 jobs",
+    "info": [
+      {
+        "snippets": "['cuts earnings target for 2015 and 370 jobs']",
+        "target": "BAE Systems"
+      }
+    ]
+  },
+  "1055_Barclays": {
+    "sentence": "Barclays settles with US investors over Libor manipulation",
+    "info": [
+      {
+        "snippets": "['settles with US investors over Libor manipulation']",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "1068_Bunzl": {
+    "sentence": "Bunzl backs 2015 view, buys more businesses",
+    "info": [
+      {
+        "snippets": "['backs 2015 view, buys more businesses']",
+        "target": "Bunzl"
+      }
+    ]
+  },
+  "1075_L&G": {
+    "sentence": "L&G strikes Â£230m bulk annuity deal",
+    "info": [
+      {
+        "snippets": "['strikes Â£230m bulk annuity deal']",
+        "target": "L&G"
+      }
+    ]
+  },
+  "1082_Bloomberg": {
+    "sentence": "Bloomberg buys Barclays' benchmarking business",
+    "info": [
+      {
+        "snippets": "[\"buys Barclays' benchmarking business\"]",
+        "target": "Bloomberg"
+      }
+    ]
+  },
+  "1083_Barclays": {
+    "sentence": "Barclays in $13.75 million US settlement over mutual funds",
+    "info": [
+      {
+        "snippets": "['in $13.75 million US settlement over']",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "1088_Tesco": {
+    "sentence": "Tesco UK personnel director quits supermarket",
+    "info": [
+      {
+        "snippets": "['personnel director quits supermarket']",
+        "target": "Tesco"
+      }
+    ]
+  },
+  "109_Severn Trent": {
+    "sentence": "Companies Severn Trent expects costs hit from inflation",
+    "info": [
+      {
+        "snippets": "['expects costs hit from']",
+        "target": "Severn Trent"
+      }
+    ]
+  },
+  "10_EasyJet": {
+    "sentence": "UPDATE 2-EasyJet sees better first half on lower fuel bill",
+    "info": [
+      {
+        "snippets": "['sees better first half']",
+        "target": "EasyJet"
+      }
+    ]
+  },
+  "1104_BHP Billiton": {
+    "sentence": "BHP Billiton to lower copper production costs",
+    "info": [
+      {
+        "snippets": "['to lower copper production costs']",
+        "target": "BHP Billiton"
+      }
+    ]
+  },
+  "1115_AstraZeneca": {
+    "sentence": "AstraZeneca in Talks to Buy Cancer Drug Developer Acerta Pharma",
+    "info": [
+      {
+        "snippets": "['in Talks to Buy']",
+        "target": "AstraZeneca"
+      }
+    ]
+  },
+  "1123_Lloyds": {
+    "sentence": "Osborne extends Lloyds sell-off plan",
+    "info": [
+      {
+        "snippets": "['sell-off plan']",
+        "target": "Lloyds"
+      }
+    ]
+  },
+  "1126_Barclays": {
+    "sentence": "Industry NewsBarclays to 'cut investment bank staff by another 20%'",
+    "info": [
+      {
+        "snippets": "[\"to 'cut investment bank staff by another 20%'\"]",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "1127_RBS": {
+    "sentence": "RBS Investment Bank to Return to Profit After Overhaul, CEO Says",
+    "info": [
+      {
+        "snippets": "['Investment Bank to Return to Profit After Overhaul,']",
+        "target": "RBS"
+      }
+    ]
+  },
+  "1138_Barclays": {
+    "sentence": "Che Banca! CEO says Barclays buy to lift profit from 2016-17",
+    "info": [
+      {
+        "snippets": "['buy to lift profit from']",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "113_BHP": {
+    "sentence": "BHP's iron ore outlook holds little cheer for small miners",
+    "info": [
+      {
+        "snippets": "['outlook holds little cheer for small miners']",
+        "target": "BHP"
+      }
+    ]
+  },
+  "1163_Morrisons": {
+    "sentence": "Early victory for new CEO as Morrisons beats forecasts",
+    "info": [
+      {
+        "snippets": "['beats forecasts']",
+        "target": "Morrisons"
+      }
+    ]
+  },
+  "1173_BP": {
+    "sentence": "BP to slash 4000 jobs globally as oil prices drop",
+    "info": [
+      {
+        "snippets": "['slash 4000 jobs globally as oil prices drop']",
+        "target": "BP"
+      }
+    ]
+  },
+  "1175_Morrisons": {
+    "sentence": "UK supermarket group Morrisons cuts fresh food prices",
+    "info": [
+      {
+        "snippets": "['cuts fresh food prices']",
+        "target": "Morrisons"
+      }
+    ]
+  },
+  "117_AO World": {
+    "sentence": "AO World shares tumble on profit warning",
+    "info": [
+      {
+        "snippets": "['shares tumble on profit warning']",
+        "target": "AO World"
+      }
+    ]
+  },
+  "1187_Direct Line": {
+    "sentence": "Direct Line expects claims of Â£110-140 million from three storms",
+    "info": [
+      {
+        "snippets": "['claims of Â£110-140 million from three storms']",
+        "target": "Direct Line"
+      }
+    ]
+  },
+  "1188_RBS": {
+    "sentence": "RBS Shares Drop After Surprise Pension Charge Cuts Capital",
+    "info": [
+      {
+        "snippets": "['snippet']",
+        "target": "RBS"
+      }
+    ]
+  },
+  "119_StanLife": {
+    "sentence": "StanLife leads FTSE after strong earnings",
+    "info": [
+      {
+        "snippets": "['after strong earnings']",
+        "target": "StanLife"
+      }
+    ]
+  },
+  "1214_Diageo": {
+    "sentence": "Diageo offloads major wine interests",
+    "info": [
+      {
+        "snippets": "['offloads major wine interests']",
+        "target": "Diageo"
+      }
+    ]
+  },
+  "1235_Glencore": {
+    "sentence": "UPDATE 1-LPC-Glencore launches refinancing of US$8.45bn loan",
+    "info": [
+      {
+        "snippets": "['launches refinancing of']",
+        "target": "Glencore"
+      }
+    ]
+  },
+  "1238_Glencore": {
+    "sentence": "LPC-Glencore launches refinancing of $8.45billion loan",
+    "info": [
+      {
+        "snippets": "['launches refinancing of $8.45billion loan']",
+        "target": "Glencore"
+      }
+    ]
+  },
+  "124_RBS": {
+    "sentence": "RBS breaks with past by tearing investment bank apart",
+    "info": [
+      {
+        "snippets": "['tearing investment bank apart']",
+        "target": "RBS"
+      }
+    ]
+  },
+  "1254_Smith & Nephew": {
+    "sentence": "Smith & Nephew 2015 trading profit beats expectations",
+    "info": [
+      {
+        "snippets": "['trading profit beats expectations']",
+        "target": "Smith & Nephew"
+      }
+    ]
+  },
+  "1263_BT Group": {
+    "sentence": "BT Group's third quarter revenues rise as restructure unveiled",
+    "info": [
+      {
+        "snippets": "['third quarter revenues rise']",
+        "target": "BT Group"
+      }
+    ]
+  },
+  "1266_Johnston Press": {
+    "sentence": "Indy future in doubt as Johnston Press lines up deal for 'i'",
+    "info": [
+      {
+        "snippets": "['lines up deal for']",
+        "target": "Johnston Press"
+      }
+    ]
+  },
+  "1269_BP": {
+    "sentence": "BP shares tumble after $2.2bn fourth-quarter loss",
+    "info": [
+      {
+        "snippets": "['shares tumble after $2.2bn fourth-quarter loss']",
+        "target": "BP"
+      }
+    ]
+  },
+  "126_Randgold Resources": {
+    "sentence": "Randgold Resources Q4 Profit Decreases - Quick Facts",
+    "info": [
+      {
+        "snippets": "['Profit Decreases']",
+        "target": "Randgold Resources"
+      }
+    ]
+  },
+  "1271_BHP Billiton": {
+    "sentence": "BHP Billiton says no settlement yet on Brazil dam disaster",
+    "info": [
+      {
+        "snippets": "['says no settlement yet on Brazil dam disaster']",
+        "target": "BHP Billiton"
+      }
+    ]
+  },
+  "1273_Hargreaves Landown": {
+    "sentence": "Hargreaves Landown slides on trading update",
+    "info": [
+      {
+        "snippets": "['slides on trading update']",
+        "target": "Hargreaves Landown"
+      }
+    ]
+  },
+  "1280_AstraZeneca": {
+    "sentence": "AstraZeneca says new lung cancer pill Tagrisso approved by EU",
+    "info": [
+      {
+        "snippets": "['lung cancer pill Tagrisso approved by']",
+        "target": "AstraZeneca"
+      }
+    ]
+  },
+  "1285_Berkshire Hathaway": {
+    "sentence": "Warren Buffett's Berkshire Hathaway quarterly profit jumps almost one third",
+    "info": [
+      {
+        "snippets": "['profit jumps almost one third']",
+        "target": "Berkshire Hathaway"
+      }
+    ]
+  },
+  "1286_Genel": {
+    "sentence": "Genel Shares Plunge After Tony Hayward's Oil Explorer Cuts Crude Reserves at Core Field",
+    "info": [
+      {
+        "snippets": "['Cuts Crude Reserves at']",
+        "target": "Genel"
+      }
+    ]
+  },
+  "1300_AstraZeneca": {
+    "sentence": "AstraZeneca agrees licensing deal for Plendil in China",
+    "info": [
+      {
+        "snippets": "['agrees licensing deal for Plendil in China']",
+        "target": "AstraZeneca"
+      }
+    ]
+  },
+  "1301_Glencore": {
+    "sentence": "Glencore posts 5.7 pct fall in Q4 copper output",
+    "info": [
+      {
+        "snippets": "['5.7 pct fall in']",
+        "target": "Glencore"
+      }
+    ]
+  },
+  "1310_Glencore": {
+    "sentence": "Glencore to refinance its short-term debt early, shares rise",
+    "info": [
+      {
+        "snippets": "['short-term debt early, shares rise']",
+        "target": "Glencore"
+      }
+    ]
+  },
+  "131_Glaxo": {
+    "sentence": "Glaxo Sees Hope for Respiratory Drugs as Earnings Beat Estimates",
+    "info": [
+      {
+        "snippets": "['as Earnings Beat Estimates']",
+        "target": "Glaxo"
+      }
+    ]
+  },
+  "1321_Weir Group": {
+    "sentence": "Industry NewsRevenue, earnings take a tumble at Weir Group",
+    "info": [
+      {
+        "snippets": "['earnings take a tumble at']",
+        "target": "Weir Group"
+      }
+    ]
+  },
+  "1337_AstraZeneca": {
+    "sentence": "CompaniesAstraZeneca shares hit as 2016 revenue forecast to fall",
+    "info": [
+      {
+        "snippets": "['hit as 2016 revenue forecast to fall']",
+        "target": "AstraZeneca"
+      }
+    ]
+  },
+  "1338_Lloyds Banking Group": {
+    "sentence": "Lloyds Banking Group reports 7% dip in annual profits",
+    "info": [
+      {
+        "snippets": "[' 7% dip in annual profits']",
+        "target": "Lloyds Banking Group"
+      }
+    ]
+  },
+  "1340_Berkshire": {
+    "sentence": "UPDATE 3-Buffett's Berkshire raises oil bet with Kinder Morgan stake",
+    "info": [
+      {
+        "snippets": "['raises oil bet with']",
+        "target": "Berkshire"
+      }
+    ]
+  },
+  "1344_Associated British Foods": {
+    "sentence": "Associated British Foods raises guidance as sterling wilts",
+    "info": [
+      {
+        "snippets": "['raises guidance as sterling wilts']",
+        "target": "Associated British Foods"
+      }
+    ]
+  },
+  "1347_Glencore": {
+    "sentence": "CompaniesGlencore shares hit 3-month high after refinancing key credit line",
+    "info": [
+      {
+        "snippets": "['hit 3-month high after refinancing key credit line']",
+        "target": "Glencore"
+      }
+    ]
+  },
+  "1348_JP Morgan Chase": {
+    "sentence": "CompaniesCoutts raids JPMorgan Chase for new CEO",
+    "info": [
+      {
+        "snippets": "['Chase for new CEO']",
+        "target": "JP Morgan Chase"
+      }
+    ]
+  },
+  "1355_Admiral and Schroders": {
+    "sentence": "Admiral and Schroders lift FTSE with profits surge",
+    "info": [
+      {
+        "snippets": "['with profits surge']",
+        "target": "Admiral and Schroders"
+      }
+    ]
+  },
+  "1361_Admiral": {
+    "sentence": "Britain's FTSE buoyed by Admiral, building sector gains",
+    "info": [
+      {
+        "snippets": "['building sector gains']",
+        "target": "Admiral"
+      }
+    ]
+  },
+  "1363_Legal & General": {
+    "sentence": "Legal & General's capital update outweighs profit rise",
+    "info": [
+      {
+        "snippets": "['update outweighs profit rise']",
+        "target": "Legal & General"
+      }
+    ]
+  },
+  "1369_Kingfisher": {
+    "sentence": "Britain's FTSE advances as investors cheer Kingfisher results",
+    "info": [
+      {
+        "snippets": "['as investors cheer Kingfisher results']",
+        "target": "Kingfisher"
+      }
+    ]
+  },
+  "1374_BP": {
+    "sentence": "BP ends 27-year sponsorship of Tate as falling oil price takes toll",
+    "info": [
+      {
+        "snippets": "['as falling oil price takes toll']",
+        "target": "BP"
+      }
+    ]
+  },
+  "1393_Shell": {
+    "sentence": "Shell CEO van Beurden's remuneration fell in 2015",
+    "info": [
+      {
+        "snippets": "['remuneration fell in']",
+        "target": "Shell"
+      }
+    ]
+  },
+  "1397_HSBC": {
+    "sentence": "HSBC money laundering report's release delayed amid US appeal",
+    "info": [
+      {
+        "snippets": "[\"report's release delayed amid US appeal\"]",
+        "target": "HSBC"
+      }
+    ]
+  },
+  "1399_Rio Tinto": {
+    "sentence": "Standout performer' JS Jacques picked to lead Rio Tinto",
+    "info": [
+      {
+        "snippets": "['picked to lead']",
+        "target": "Rio Tinto"
+      }
+    ]
+  },
+  "1401_Barclays": {
+    "sentence": "Barclays reports 8% fall in annual profits",
+    "info": [
+      {
+        "snippets": "[' 8% fall in']",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "1406_Metro Bank": {
+    "sentence": "CompaniesMetro Bank raises Â£400m ahead of London listing",
+    "info": [
+      {
+        "snippets": "['raises Â£400m ahead of']",
+        "target": "Metro Bank"
+      }
+    ]
+  },
+  "1411_Sports Direct": {
+    "sentence": "Sports Direct boss Mike Ashley summoned to Westminster for questioning over the treatment of workers",
+    "info": [
+      {
+        "snippets": "['for questioning over the treatment of']",
+        "target": "Sports Direct"
+      }
+    ]
+  },
+  "1413_Aggreko": {
+    "sentence": "Aggreko says first half profits will be lower as the oil price rout claims its latest victim",
+    "info": [
+      {
+        "snippets": "['first half profits will be lower as the oil price rout']",
+        "target": "Aggreko"
+      }
+    ]
+  },
+  "141_Berkshire Hathaway": {
+    "sentence": "Berkshire Hathaway's 4Q profit declines 17 percent",
+    "info": [
+      {
+        "snippets": "['profit declines 17 percent']",
+        "target": "Berkshire Hathaway"
+      }
+    ]
+  },
+  "144_Bunzl": {
+    "sentence": "Bunzl delivers small profit increase for 2014",
+    "info": [
+      {
+        "snippets": "['delivers small profit increase for']",
+        "target": "Bunzl"
+      }
+    ]
+  },
+  "1452_BP": {
+    "sentence": "BP sees Q1 earnings slide as low oil prices take their toll",
+    "info": [
+      {
+        "snippets": "['earnings slide as low oil prices take their toll']",
+        "target": "BP"
+      }
+    ]
+  },
+  "1457_BP": {
+    "sentence": "BP Reports $583 Million Loss in First Quarter",
+    "info": [
+      {
+        "snippets": "['Reports $583 Million Loss in First Quarter']",
+        "target": "BP"
+      }
+    ]
+  },
+  "1459_AB InBev": {
+    "sentence": "AB InBev offers to sell some SABMiller brands",
+    "info": [
+      {
+        "snippets": "['offers to sell some']",
+        "target": "AB InBev"
+      }
+    ]
+  },
+  "1464_AstraZeneca": {
+    "sentence": "AstraZeneca to cut costs but stays silent on M&A talk",
+    "info": [
+      {
+        "snippets": "['to cut costs but stays silent on']",
+        "target": "AstraZeneca"
+      }
+    ]
+  },
+  "1466_Barclays": {
+    "sentence": "Barclays in Talks With AnaCap to Sell French Consumer Operations",
+    "info": [
+      {
+        "snippets": "['to Sell French Consumer Operations']",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "1479_Kraft Heinz": {
+    "sentence": "The Latest: Buffett says cuts will pay off at Kraft Heinz",
+    "info": [
+      {
+        "snippets": "['Buffett says cuts will pay off at']",
+        "target": "Kraft Heinz"
+      }
+    ]
+  },
+  "1483_Shoeders": {
+    "sentence": "Schroders assets hit record in Q1, buoyed by institutional inflows",
+    "info": [
+      {
+        "snippets": "['hit record in Q1, buoyed by']",
+        "target": "Shoeders"
+      }
+    ]
+  },
+  "1489_Barclays": {
+    "sentence": "Former Barclays traders stand trial in Libor case",
+    "info": [
+      {
+        "snippets": "['stand trial in Libor case']",
+        "target": "Barclays"
+      }
+    ]
+  },
+  "148_Standard Life": {
+    "sentence": "Standard Life impresses as fee-based products offset annuities slump",
+    "info": [
+      {
+        "snippets": "['impresses as fee-based products offset annuities slump']",
+        "target": "Standard Life"
+      }
+    ]
+  },
+  "1494_Sky": {
+    "sentence": "Britain's FTSE slips from 2016 high as Sky falls",
+    "info": [
+      {
+        "snippets": "['slips from 2016 high']",
+        "target": "Sky"
+      }
+    ]
+  },
+  "149_Reed Elsevier": {
+    "sentence": "Reed Elsevier shares cool after profit dip",
+    "info": [
+      {
+        "snippets": "['shares cool after profit dip']",
+        "target": "Reed Elsevier"
+      }
+    ]
+  },
+  "1520_Lloyds": {
+    "sentence": "Retail focus helps to shield Lloyds from banking chill",
+    "info": [
+      {
+        "snippets": "['helps to shield Lloyds from banking chill']",
+        "target": "Lloyds"
+      }
+    ]
+  },
+  "1538_Centrica": {
+    "sentence": "CompaniesCentrica shares drop 7% amid capital raise",
+    "info": [
+      {
+        "snippets": "['shares drop 7% amid capital raise']",
+        "target": "Centrica"
+      }
+    ]
+  },
+  "1539_United Utilities": {
+    "sentence": "United Utilities FY profit up 3.5%; to boost capex",
+    "info": [
+      {
+        "snippets": "['profit up 3.5%']",
+        "target": "United Utilities"
+      }
+    ]
+  },
+  "1542_Compass": {
+    "sentence": "CompaniesCompass serves up half year profit rise",
+    "info": [
+      {
+        "snippets": "['serves up half year profit rise']",
+        "target": "Compass"
+      }
+    ]
+  },
+  "1547_SABMiller": {
+    "sentence": "Currency causes full-year headaches for SABMiller",
+    "info": [
+      {
+        "snippets": "[' causes full-year headaches for']",
+        "target": "SABMiller"
+      }
+    ]
+  },
+  "1572_Exxon": {
+    "sentence": "Exxon Beaumont CDU overhaul to be slowed by accident: sources",
+    "info": [
+      {
+        "snippets": "['overhaul to be slowed by accident:']",
+        "target": "Exxon"
+      }
+    ]
+  },
+  "1574_G4S": {
+    "sentence": "CompaniesG4S claims 'positive' start to the year",
+    "info": [
+      {
+        "snippets": "[\"claims 'positive' start to the year\"]",
+        "target": "G4S"
+      }
+    ]
+  },
+  "1594_Rio Tinto": {
+    "sentence": "Rio Tinto announces long-delayed expansion of Mongolia mine",
+    "info": [
+      {
+        "snippets": "['announces long-delayed expansion of Mongolia mine']",
+        "target": "Rio Tinto"
+      }
+    ]
+  },
+  "1603_Apple": {
+    "sentence": "Warren Buffett's Berkshire Hathaway buys stake in Apple",
+    "info": [
+      {
+        "snippets": "['buys stake in']",
+        "target": "Apple"
+      }
+    ]
+  },
+  "1614_Royal Mail": {
+    "sentence": "Ofcom says will not impose new price controls on Royal Mail",
+    "info": [
+      {
+        "snippets": "['will not impose new price controls on']",
+        "target": "Royal Mail"
+      }
+    ]
+  }
+}
