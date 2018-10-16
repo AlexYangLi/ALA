@@ -47,4 +47,4 @@ def word2vec(fname, save_file):
 
 
 if __name__ == '__main__':
-    word2vec('../data/train.tsv', '../data/embeddings_300_dim.pkl')
+    word2vec('../data/train.csv', '../data/embeddings_300_dim.pkl')

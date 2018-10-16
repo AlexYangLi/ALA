@@ -22,8 +22,7 @@ import pickle
 import tensorflow as tf
 import utils
 from read_data import read_data_for_senti
-from model import DeepMem
-from model import AT_LSTM
+from models import DeepMem, AT_LSTM
 
 
 flags = tf.app.flags
@@ -60,6 +59,8 @@ flags.DEFINE_string('lstm_type', 'at', 'type of lstm model')
 
 FLAGS = flags.FLAGS
 
+if not os.path.exists('log'):
+    os.makedirs('log')
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                     datefmt='%a, %d %b %Y %H:%M:%S', filename='./log/train.log', filemode='a')
@@ -97,10 +98,10 @@ def train_model(data, word_embeddings, model_type=""):
 def main(model_type):
     pre_trained_vectors = utils.get_gensim_vectors(FLAGS.vector_file)
 
-    data, word_embeddings, word2idx, aspect2idx, max_context_len = read_data(FLAGS.data,
-                                                                             pre_trained_vectors,
-                                                                             FLAGS.embedding_dim,
-                                                                             FLAGS.one_aspect)
+    data, word_embeddings, word2idx, aspect2idx, max_context_len = read_data_for_senti(FLAGS.data,
+                                                                                       pre_trained_vectors,
+                                                                                       FLAGS.embedding_dim,
+                                                                                       FLAGS.one_aspect)
 
     FLAGS.max_len = max_context_len
     FLAGS.n_aspect = len(aspect2idx)
@@ -109,7 +110,7 @@ def main(model_type):
     FLAGS.model_name = 'm'
 
     if not os.path.exists(FLAGS.model_path):
-        os.mkdir(FLAGS.model_path)
+        os.makedirs(FLAGS.model_path)
 
     print('unique words embedding: ', word_embeddings.shape)
     print('unique aspect: ', len(aspect2idx))
@@ -118,7 +119,7 @@ def main(model_type):
     train_model(data, word_embeddings, model_type)
 
     save_data = {'aspect2idx': aspect2idx, 'word2idx': word2idx, 'max_context_len': max_context_len}
-    with open(os.path.join(FLAGS.model_path, 'save_data'), 'wb')as writer:
+    with open(os.path.join(FLAGS.model_path, 'save_data.pkl'), 'wb')as writer:
         pickle.dump(save_data, writer)
 
 

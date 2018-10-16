@@ -53,5 +53,5 @@ if __name__ == '__main__':
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
     parse_json(json_files=['../raw_data/task1_headline_ABSA_train.json', '../raw_data/task1_post_ABSA_train.json'],
-               save_file=os.path.join(save_dir, 'train.tsv'))
+               save_file=os.path.join(save_dir, 'train.csv'))
 

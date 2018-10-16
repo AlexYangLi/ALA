@@ -1,4 +1,3 @@
-
 cd preprocess
 
 echo "preprocessing raw data..."

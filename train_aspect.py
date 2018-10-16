@@ -21,7 +21,7 @@ import pickle
 import tensorflow as tf
 import utils
 from read_data import read_data_for_aspect
-from model import Classifier
+from models import Classifier
 
 
 flags = tf.app.flags
@@ -29,21 +29,31 @@ flags = tf.app.flags
 # common hyper-parameter
 flags.DEFINE_integer('embedding_dim', 300, 'word embedding dimension')
 flags.DEFINE_integer('n_epoch', 50, 'max epoch to train')
+flags.DEFINE_integer('max_len', 0, 'max length of one sentence')
+flags.DEFINE_integer('n_word', 0, 'number of words')
+flags.DEFINE_integer('n_class', 0, 'how many classes to predict')
 flags.DEFINE_integer('batch_size', 64, 'batch size')
 flags.DEFINE_integer('early_stopping_step', 3, "if loss doesn't descend in 3 epochs, stop training")
+flags.DEFINE_integer('train_time', 0, 'train time')
 flags.DEFINE_float('stddev', 0.01, 'weight initialization stddev')
 flags.DEFINE_float('l2_reg', 0.001, 'l2 regularization')
 flags.DEFINE_boolean('show', True, 'print train progress')
 flags.DEFINE_boolean('embed_trainable', True, 'whether word embeddings are trainable')
 flags.DEFINE_string('data', './data/train.csv', 'data set file path')
 flags.DEFINE_string("vector_file", "./data/embeddings_300_dim.pkl", "pre-trained word vectors file path")
+flags.DEFINE_string('model_path', '.', 'path to save model')
+flags.DEFINE_string('model_name', 'm', 'model_name')
 
 # hyper-parameter for aspect classification model
-flags.DEFINE_string('classifier_type', 'lstm', 'type of classification model: lstm, cnn')
+flags.DEFINE_string('classifier_type', 'lstm', 'type of classification model: lstm')
+flags.DEFINE_integer('hidden_size', 300, "lstm's hidden units")
+flags.DEFINE_integer('n_layer', 3, 'number of lstm layers')
+flags.DEFINE_boolean('is_multi', True, 'whether to use multi lstm')
 
 FLAGS = flags.FLAGS
 
-
+if not os.path.exists('log'):
+    os.makedirs('log')
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                     datefmt='%a, %d %b %Y %H:%M:%S', filename='./log/train.log', filemode='a')
@@ -77,14 +87,17 @@ def train_model(data, word_embeddings):
 def main(_):
     pre_trained_vectors = utils.get_gensim_vectors(FLAGS.vector_file)
 
-    data, word_embeddings, word2idx, max_context_len, onehot_mapping = read_data(FLAGS.data,
-                                                                                 pre_trained_vectors,
-                                                                                 FLAGS.embedding_dim)
+    data, word_embeddings, word2idx, max_context_len, onehot_mapping = read_data_for_aspect(FLAGS.data,
+                                                                                            pre_trained_vectors,
+                                                                                            FLAGS.embedding_dim)
 
     FLAGS.max_len = max_context_len
     FLAGS.n_word = word_embeddings.shape[0]
-    FLAGS.model_path = './save_model'
+    FLAGS.model_path = './save_model/classifier/'
     FLAGS.model_name = 'm'
+    if not os.path.exists(FLAGS.model_path):
+        os.makedirs(FLAGS.model_path)
+
     FLAGS.n_class = data[-1].shape[1]
 
     if not os.path.exists(FLAGS.model_path):

@@ -76,9 +76,11 @@ class Classifier(object):
         self.best_accuracy = 0.0
         self.stopping_step = 0
 
+        if not os.path.exists('log'):
+            os.makedirs('log')
         logging.basicConfig(level=logging.DEBUG,
                             format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
-                            datefmt='%a, %d %b %Y %H:%M:%S', filename='./data/LSTM_Classifierwatch.log', filemode='a')
+                            datefmt='%a, %d %b %Y %H:%M:%S', filename='./log/LSTM_Classifierwatch.log', filemode='a')
 
     def multi_lstm(self):
         batch_size = tf.shape(self.context_embed)[0]
@@ -118,27 +120,9 @@ class Classifier(object):
         predict = tf.nn.softmax(tf.matmul(hidden_output, self.W_final) + self.B_final)
         return predict
 
-    def cnn_model(self):
-        conv_filter_w = tf.Variable(tf.truncated_normal([3, self.edim, 64],
-                                                        stddev=self.stddev), name='W_hidden')
-        conv_filter_b = tf.Variable(tf.constant(0.1, shape=[64]))
-        conv_output = tf.nn.conv1d(self.context_embed, conv_filter_w, stride=2, padding='SAME')
-        relu_output = tf.nn.relu(conv_output + conv_filter_b)
-
-        batch_size = tf.shape(relu_output)[0]
-        flatten = tf.reshape(relu_output, [batch_size, -1])
-
-        W_hidden = tf.Variable(tf.truncated_normal([14 * 64, 128], stddev=self.stddev), name='W_hidden_cnn')
-        B_hidden = tf.Variable(tf.constant(0.1, shape=[128]), name='B_hidden_cnn')
-        hidden_output = tf.matmul(flatten, W_hidden) + B_hidden
-        predict = tf.nn.softmax(tf.matmul(hidden_output, self.W_final) + self.B_final)
-        return predict
-
     def build_model(self):
         if self.classifier_type == 'lstm':
             self.predict = self.lstm_model()
-        elif self.classifier_type == 'cnn':
-            self.predict = self.cnn_model()
         else:
             self.predict = self.lstm_model()
         self.loss = tf.reduce_mean(
@@ -175,7 +159,7 @@ class Classifier(object):
             if self.show:
                 print(self.classifier_type, ' epoch:', epoch, 'train_loss:', avg_loss, 'train_accuracy:', avg_accuracy)
 
-            saver.save(self.sess, os.path.join(self.save_model_path + self.save_model_name), global_step=epoch)
+            saver.save(self.sess, os.path.join(self.save_model_path, self.save_model_name), global_step=epoch)
 
             valid_loss, valid_accuracy = self.valid(valid_data)
 
@@ -277,9 +261,11 @@ class DeepMem(object):
         self.best_r2 = 0.0
         self.stopping_step = 0
 
+        if not os.path.exists('log'):
+            os.makedirs('log')
         logging.basicConfig(level=logging.DEBUG,
                             format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
-                            datefmt='%a, %d %b %Y %H:%M:%S', filename='./data/DeepMem_watch.log', filemode='a')
+                            datefmt='%a, %d %b %Y %H:%M:%S', filename='./log/DeepMem_watch.log', filemode='a')
 
     def build_memory(self):
 
@@ -368,7 +354,7 @@ class DeepMem(object):
             if self.show:
                 print('deepmem epoch:', epoch, 'train_mse:', avg_mse, 'train_r2:', avg_r2)
 
-            saver.save(self.sess, os.path.join(self.save_model_path + self.save_model_name), global_step=epoch)
+            saver.save(self.sess, os.path.join(self.save_model_path, self.save_model_name), global_step=epoch)
 
             valid_mse, valid_r2 = self.valid(valid_data)
             if valid_mse < self.best_mse:
@@ -480,9 +466,11 @@ class AT_LSTM(object):
         self.best_r2 = 0.0
         self.stopping_step = 0
 
+        if not os.path.exists('log'):
+            os.makedirs('log')
         logging.basicConfig(level=logging.DEBUG,
                             format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
-                            datefmt='%a, %d %b %Y %H:%M:%S', filename='./data/AT_LSTM_watch.log', filemode='a')
+                            datefmt='%a, %d %b %Y %H:%M:%S', filename='./log/AT_LSTM_watch.log', filemode='a')
 
     def multi_lstm(self):
         batch_size = tf.shape(self.context_embed)[0]
@@ -517,27 +505,6 @@ class AT_LSTM(object):
         elif outputs == 'all_avg':
             outputs = AT_LSTM.reduce_mean(outputs, context_len)  # [batch_size, hidden_size]
         return outputs
-
-    def cnn_model(self):
-        conv_filter_w = tf.Variable(tf.truncated_normal([3, self.edim, 64],
-                                                        stddev=self.stddev), name='W_hidden')
-        conv_filter_b = tf.Variable(tf.constant(0.1, shape=[64]))
-        conv_output = tf.nn.conv1d(self.context_embed, conv_filter_w, stride=1, padding='SAME')
-        relu_output = tf.nn.relu(conv_output + conv_filter_b)
-
-        relu_output = tf.expand_dims(relu_output, 1)
-        max_pool = tf.nn.max_pool(relu_output, ksize=[1, 1, 2, 1], strides=[1, 1, 2, 1], padding='SAME')
-
-        batch_size = tf.shape(max_pool)[0]
-        flatten = tf.reshape(max_pool, [batch_size, -1])
-
-        W_hidden = tf.Variable(tf.truncated_normal([9 * 64, 128], stddev=self.stddev), name='W_hidden_cnn')
-        B_hidden = tf.Variable(tf.constant(0.1, shape=[128]), name='B_hidden_cnn')
-        hidden_output = tf.matmul(flatten, W_hidden) + B_hidden
-
-        W_final = tf.Variable(tf.truncated_normal([128, 1], stddev=self.stddev), name='W_final')
-        predict = tf.matmul(hidden_output, W_final, name='predict')
-        return predict
 
     # orignal lstm model
     def original_model(self):
@@ -645,8 +612,6 @@ class AT_LSTM(object):
             self.predict = self.ae_model()
         elif self.lstm_type == 'atae':
             self.predict = self.atae_model()
-        elif self.lstm_type == 'cnn':
-            self.predict = self.cnn_model()
         else:
             self.predict = self.original_model()
 
@@ -740,7 +705,6 @@ class AT_LSTM(object):
     @staticmethod
     def reduce_mean(inputs, length):
         """
-
         :param inputs: 3D tensor->[batch_size, sequence_len, embedding_size]
         :param length: 1D tensor->[batch_size], represent every sample's len, not bigger than sequence_len
         :return: 2D tensor->[batch_size, embedding_size]
