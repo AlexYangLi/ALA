@@ -25,3 +25,6 @@ python train_aspect.py
 python train_senti.py model_type # eg. python train_senti.py DeepMem, options are DeepMem or AT_LSTM
 ```
 
+## Paper
+
+[Aspect-based Financial Sentiment Analysis with Deep Neural Networks](https://dl.acm.org/citation.cfm?id=3191825)
